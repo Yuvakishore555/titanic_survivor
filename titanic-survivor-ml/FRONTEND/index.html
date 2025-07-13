@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Titanic Survival Predictor</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Titanic Survival Predictor</h1>
+    <form id="predict-form">
+      <input type="number" name="Age" placeholder="Age" required />
+      <input type="number" name="Fare" placeholder="Fare" required />
+
+      <select name="Sex" required>
+        <option value="" disabled selected>Sex</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <select name="Embarked" required>
+        <option value="" disabled selected>Embarked</option>
+        <option value="C">Cherbourg</option>
+        <option value="Q">Queenstown</option>
+        <option value="S">Southampton</option>
+      </select>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="/static/sc.js"></script>
+</body>
+</html>
